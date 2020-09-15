@@ -2,12 +2,12 @@ const initialState = {
     name: 'Alexander Whitt',
     knowlege: ['React','Redux','JavaScript','CSS','HTML', 'and more!'],
     cards: [
-        {id: 1, name:'Title', description: 'testy, tests that test tests, you test?', numberOfProjects: 0},
-        {id: 2, name:'Redux', description: 'projects that focus on state managmet using redux', numberOfProjects: 0}, 
-        {id: 3, name:'CSS', description: 'projects focused on aesthetics', numberOfProjects: 0}, 
-        {id: 4, name:'Title', description: 'testy, tests that test tests, you test?', numberOfProjects: 0}, 
-        {id: 5, name:'Title', description: 'testy, tests that test tests, you test?', numberOfProjects: 0}, 
-        {id: 6, name:'Title', description: 'testy, tests that test tests, you test?', numberOfProjects: 0}, 
+        {id: 1, name:'Clones', description: 'projects that are made to mirror well known websites', links: [], numberOfProjects: function() {return this.links.length}},
+        {id: 2, name:'Redux', description: 'projects that focus on state managmet using redux',links: [], numberOfProjects: function() {return this.links.length}}, 
+        {id: 3, name:'CSS', description: 'projects focused on aesthetics', links: [], numberOfProjects: function() {return this.links.length}}, 
+        {id: 4, name:'Title', description: 'testy, tests that test tests, you test?', links: [], numberOfProjects: function() {return this.links.length}}, 
+        {id: 5, name:'Title', description: 'testy, tests that test tests, you test?', links: [], numberOfProjects: function() {return this.links.length}}, 
+        {id: 6, name:'Title', description: 'testy, tests that test tests, you test?', links: [], numberOfProjects: function() {return this.links.length}}, 
          ],
     color: 0
 }

@@ -13,6 +13,7 @@
     margin-bottom: 5%;
     width: 20%;
     height: 20vh;
+    filter: brightness(50%);
   }
   
 .card:nth-of-type(1n +1) {
@@ -70,7 +71,8 @@
 
 .card:hover {
     background-color:  #2b2b2b;
-    box-shadow: 0px 0px 30px;;
+    box-shadow: 0px 0px 30px;
+    filter: brightness(100%);
    }
 
 .desc {

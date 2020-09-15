@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { connect } from 'react-redux';
 import Card from './core/cards';
 import '../css/cards.css';
-import click2 from '../sound/click2.mp3';
+import buzz from '../sound/buzz.flac';
 import {Howl, Howler} from 'howler'
 
 const Landing = props => {
@@ -12,7 +12,7 @@ const Landing = props => {
     sound.play();
     }
     const cls = x => {
-        soundPlay(click2);
+        soundPlay(buzz);
     }
     Howler.volume(0.05);
     return(
